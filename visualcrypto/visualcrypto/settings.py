@@ -23,7 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-ww1ie9d6gjzkxvsw401f96t-s(f(i1#(y7v72w)xt)#2po(f9-'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['13.60.49.149']
 
@@ -124,11 +124,4 @@ STATIC_URL = 'static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 MEDIA_ROOT = str(BASE_DIR) + '/media'
 MEDIA_URL = '/media/'
-SECURE_SSL_REDIRECT = True
-SECURE_HSTS_SECONDS = 31536000
-SECURE_BROWSER_XSS_FILTER = True
-SECURE_CONTENT_TYPE_NOSNIFF = True
-X_FRAME_OPTIONS = 'DENY'
-SESSION_COOKIE_SECURE = True
-CSRF_COOKIE_SECURE = True
 
